@@ -1,29 +1,76 @@
+@font-face {
+  font-family: "partybusiness";
+  src : url('fonts/fontTextes/partybusiness.ttf');
+}
+
+@font-face {
+  font-family: "anicm";
+  src : url('fonts/fontTitres/anicm___.ttf');
+}
+
+@font-face {
+  font-family: "tnganb";
+  src : url('fonts/Symboles/tngani.ttf');
+}
+
+h5{
+  font-family: "partybusiness";
+  font-size: 3.5em;
+}
+
+p{
+  font-family: "partybusiness";
+  font-size: 2.5em;
+}
+
+.navbar {
+  padding: 10px;
+  background-color: #FF5D18;
+  font-family: "partybusiness";
+  font-size: 2em;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
 
 .under_carousel_title {
     display: block;
     text-align: center;
+    font-family: "partybusiness";
+    font-size: 3em;
 }  
-/* Pills badges section */
-.badgesContainer {
-    display:flex;
-    justify-content: space-around;
-}   
 
-.badges2 .badges3 {
-    color:gray;
+.symbols {
+  font-family: "tnganb";
+  color: #FF5D18;
+  font-size:1,5em;
+
 }
 
 /* Most wanted section */
-.jumbotron {
+.card {
     position: relative;
+    background-color: rgb(53, 48, 48);
     width: 95%;
+  }
+
+  .lead {
+    color: beige;
+    font-size: 2em;
+    text-align: center;
+
   }
   
   .imgMW {
-    opacity: 0.60;
+    opacity: 0.80;
     display: block;
-    width: 100%;
-    height: 100%;
+    transition: .2s ease;
+  }
+
+  .imgDead {
+    opacity: 0.35;
+    display: block;
     transition: .2s ease;
   }
   
@@ -31,14 +78,31 @@
     opacity: 0.8;
     position: absolute;
     height:22% ; 
-    width:80%;
+    width:75%;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center; 
     background-color: #E2E2E2;
-    border-radius:20px; 
+    border-radius:15px; 
+    font-family: "partybusiness";
+  }
+
+  .topTitleDead {
+    text-decoration-color: #FF5D18;
+    position: absolute;
+    height:22% ; 
+    width:75%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; 
+    font-size: 30px;  
+    font-family: "partybusiness";
+
+
   }
   
   .middleTitle {
@@ -49,48 +113,94 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    font-family: "partybusiness";
+  }
+
+  .middleTitleDead {
+    position: absolute;
+    top: 50%;
+    left: 50%;transition: .2s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "partybusiness";
   }
   
   .rewardTitle {
     color: black;
-    font-size: 3.5vw;
+    font-family: "partybusiness";
+    font-size: 34px;
     top: 50%;
     left: 50%;
-    font-family: Roboto,sans-serif;
   }
-    
+
+  .rewardTitleDead {
+    color:#FF5D18;
+    font-family: "partybusiness";
+    font-size: 34px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .nbReward {
+    color: #FF5D18;
+  }
+
   .fellowTitle {
-    color: white;
+    color: whitesmoke;
     font-size: 70px;
     top: 50%;
     left: 50%;
-    font-family: Roboto,sans-serif;
+    font-family: "partybusiness";
+  }
+
+  .middleTitleDead {
+    color: #FF5D18;
+    font-size: 70px;
+    top: 50%;
+    left: 50%;
+    font-family: "partybusiness";
+  }
+
+  .orangePill:hover {
+    text-decoration-color: #FF5D18;
+    color: #FF5D18;
+}
+
+  .middleTitleDead:hover {
+    text-decoration: line-through;
+    text-decoration-color: #FF5D18;
   }
   
-  .jumbotron:hover .imgMW {
+  .card.imgMW:hover {
     opacity: 1;
   }
-  
-  .jumbotron:hover .topTitle {
+
+  .card .imgDead:hover {
+    opacity: 0.5;
+  }
+
+  .card:hover .topTitle {
     opacity: 0;
   }
-  .jumbotron:hover .rewardTitle {
+  .card:hover .rewardTitle {
     opacity: 0;
   }
   
-  .jumbotron:hover .middleTitle {
+  .card:hover .middleTitle {
     top: 65%;
   }
   
-  .jumbotron:hover .fellowTitle {
+  .card:hover .fellowTitle {
     font-size: 35px;
   }
+
+
 
   /*Why is the ring awesome? Bootcard */
   .imgGollum {
       display: flex;
       flex-flow: row-reverse;
-    
   }
 
   .gollumPic {
